@@ -1,9 +1,8 @@
 # Summary
 
-* [简介](README.md)
-* [第一章](Chapter1/README.md)
-    * [第1节：衣](Chapter1/衣.md)
-* [第二章](Chapter2/README.md)
-* [第三章](Chapter3/README.md)
-* [第四章](Chapter4/README.md)
+* [业务代码干货宝典](README.md)
+* [Part1：CSS](Part1_CSS/README.md)
+    * [文本省略](Part1_CSS/文本省略.md)
+    * [placeholder样式设置](Part1_CSS/placeholder样式设置.md)
+* [Part2：JS](Part2_JS/README.md)
 

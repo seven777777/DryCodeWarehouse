@@ -29,13 +29,11 @@
 
   可以指定端口 `gitbook serve --port xxxx ` 
 
+  默认会输出到`/_book`文件夹下，可指定输出文件夹 `gitbook serve [书籍路径] [输出路径]`
+
 + `gitbook build` 创建书籍
 
-  默认会输出到`/_book`文件夹下，也可以指定文件夹
-
-  ```
-  gitbook build [书籍路径] [输出路径]
-  ```
+  默认会输出到`/_book`文件夹下，可指定输出文件夹 `gitbook build [书籍路径] [输出路径]`
 
   因为我希望能够在github上生成预览页面，因此，根据github page的设定，此处使用`gitbook build ./ ./docs` 设置输出文件夹名为`docs`
 
