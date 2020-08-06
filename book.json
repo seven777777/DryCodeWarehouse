@@ -27,7 +27,6 @@
         "anchor-navigation-ex",
         "copy-code-button",
         "tbfed-pagefooter",
-        "pageview-count",
         "hide-element"
     ],
     "pluginsConfig": {
@@ -45,7 +44,7 @@
             ]
         },
         "donate": {
-            "alipay": "./images/ali_reward.jpg",
+            "alipay": "/images/ali_reward.jpg",
             "title": "",
             "button": "赞赏",
             "alipayText": "支付宝打赏"
