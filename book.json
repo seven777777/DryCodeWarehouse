@@ -27,7 +27,8 @@
         "anchor-navigation-ex",
         "copy-code-button",
         "tbfed-pagefooter",
-        "hide-element"
+        "hide-element",
+        "valine"
     ],
     "pluginsConfig": {
         "github": {
@@ -82,6 +83,10 @@
         },
         "hide-element": {
             "elements": [".gitbook-link"]
+        },
+        "valine": {
+            "appId": "TLeqR9Kf9OEdCIJbRoePAVJa-gzGzoHsz",
+            "appKey": "yWIrEcQgcVcBIss59UlGeyV8"
         }
     }
 }
