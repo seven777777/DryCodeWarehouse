@@ -2,7 +2,7 @@
 ```js
 /**
 * color=>rgba
-* @param {color} 色值，不含#号键
+* @param {color} 色值
 * @param {opacity} 透明度
 *
 * 测试:
@@ -12,7 +12,7 @@ colorToRGBA(color, opacity) {
     let _color
     if (color.substr(0, 1) == "#")
         _color = color.substring(1);
-    if (color.length != 6)
+    if (_color.length != 6)
         return '';
 
     _color = color.toLowerCase()
