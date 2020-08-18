@@ -340,48 +340,32 @@
                                 <section class="normal markdown-section">
                                 
                                 <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x7ED8;&#x5236;&#x6C34;&#x6EF4;&#x5F62;&#x72B6;&#x6837;&#x5F0F;"><b></b>&#x7ED8;&#x5236;&#x6C34;&#x6EF4;&#x5F62;&#x72B6;&#x6837;&#x5F0F;</a></li></ul></div><a href="#&#x7ED8;&#x5236;&#x6C34;&#x6EF4;&#x5F62;&#x72B6;&#x6837;&#x5F0F;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x7ED8;&#x5236;&#x6C34;&#x6EF4;&#x5F62;&#x72B6;&#x6837;&#x5F0F;"><a name="&#x7ED8;&#x5236;&#x6C34;&#x6EF4;&#x5F62;&#x72B6;&#x6837;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#&#x7ED8;&#x5236;&#x6C34;&#x6EF4;&#x5F62;&#x72B6;&#x6837;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x7ED8;&#x5236;&#x6C34;&#x6EF4;&#x5F62;&#x72B6;&#x6837;&#x5F0F;" class="plugin-anchor" href="#&#x7ED8;&#x5236;&#x6C34;&#x6EF4;&#x5F62;&#x72B6;&#x6837;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7ED8;&#x5236;&#x6C34;&#x6EF4;&#x5F62;&#x72B6;&#x6837;&#x5F0F;</h1>
-<pre><code class="lang-css"><span class="hljs-selector-tag">span</span> {
-  <span class="hljs-attribute">height</span>: <span class="hljs-number">40px</span>;
-  <span class="hljs-attribute">width</span>: <span class="hljs-number">40px</span>;
-  <span class="hljs-attribute">display</span>: block;
-  <span class="hljs-attribute">position</span>: relative;
-}
-<span class="hljs-selector-class">.nav</span> {
-  <span class="hljs-attribute">width</span>: <span class="hljs-number">26px</span>;
-}
-<span class="hljs-selector-class">.nav</span><span class="hljs-selector-pseudo">:before</span> {
-  <span class="hljs-attribute">content</span>: <span class="hljs-string">&apos;&apos;</span>;
-  <span class="hljs-attribute">height</span>: <span class="hljs-number">26px</span>;
-  <span class="hljs-attribute">width</span>: <span class="hljs-number">26px</span>;
-  <span class="hljs-attribute">display</span>: block;
-  <span class="hljs-attribute">position</span>: absolute;
-  <span class="hljs-attribute">top</span>: <span class="hljs-number">38px</span>;
-  <span class="hljs-attribute">left</span>: <span class="hljs-number">15px</span>;
-  <span class="hljs-attribute">z-index</span>: <span class="hljs-number">1</span>;
-  <span class="hljs-attribute">line-height</span>: <span class="hljs-number">26px</span>;
-  <span class="hljs-attribute">background</span>: <span class="hljs-number">#6ccddf</span>;
-  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">40px</span>;
-  <span class="hljs-attribute">-webkit-border-radius</span>: <span class="hljs-number">40px</span>;
-  <span class="hljs-attribute">-moz-border-radius</span>: <span class="hljs-number">40px</span>;
-  <span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
-  <span class="hljs-attribute">text-align</span>: center;
-}
-<span class="hljs-selector-class">.nav</span><span class="hljs-selector-pseudo">:after</span> {
-  <span class="hljs-attribute">content</span>: <span class="hljs-string">&apos;&apos;</span>;
-  <span class="hljs-attribute">height</span>: <span class="hljs-number">0px</span>;
-  <span class="hljs-attribute">width</span>: <span class="hljs-number">0px</span>;
-  <span class="hljs-attribute">border</span>: <span class="hljs-number">10px</span> transparent solid;
-  <span class="hljs-attribute">display</span>: block;
-  <span class="hljs-attribute">position</span>: absolute;
-  <span class="hljs-attribute">bottom</span>: -<span class="hljs-number">2px</span>;
-  <span class="hljs-attribute">left</span>: <span class="hljs-number">18px</span>;
-  <span class="hljs-attribute">border-right</span>: <span class="hljs-number">10px</span> solid transparent;
-  <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">15px</span> solid <span class="hljs-number">#6ccddf</span>;
-  <span class="hljs-attribute">border-left</span>: <span class="hljs-number">10px</span> solid transparent;
+<pre><code class="lang-scss"><span class="hljs-selector-class">.dropmarker</span>{
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">26px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">26px</span>;
+    <span class="hljs-attribute">position</span>: relative;
+    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;
+    <span class="hljs-attribute">background</span>: <span class="hljs-number">#6ccddf</span>;
+    <span class="hljs-attribute">line-height</span>: <span class="hljs-number">26px</span>;
+    <span class="hljs-attribute">text-align</span>: center;
+    <span class="hljs-attribute">color</span>: white;
+    &amp;:after {
+        <span class="hljs-attribute">content</span>: <span class="hljs-string">&apos;&apos;</span>;
+        <span class="hljs-attribute">width</span>: <span class="hljs-number">0px</span>;
+        <span class="hljs-attribute">height</span>: <span class="hljs-number">0px</span>;
+        <span class="hljs-attribute">border</span>: <span class="hljs-number">10px</span> transparent solid;
+        <span class="hljs-attribute">position</span>: absolute;
+        <span class="hljs-attribute">bottom</span>: -<span class="hljs-number">20px</span>;
+        <span class="hljs-attribute">left</span>: <span class="hljs-number">50%</span>;
+        <span class="hljs-attribute">transform</span>: translateX(-<span class="hljs-number">50%</span>);
+        <span class="hljs-attribute">border-right</span>: <span class="hljs-number">10px</span> solid transparent;
+        <span class="hljs-attribute">border-top</span>: <span class="hljs-number">15px</span> solid <span class="hljs-number">#6ccddf</span>;
+        <span class="hljs-attribute">border-left</span>: <span class="hljs-number">10px</span> solid transparent;
+    }
 }
 </code></pre>
 <p><footer class="page-footer"><span class="copyright">Copyright &#xA9; 2020 Seven all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2020-08-18 15:24:58
+2020-08-18 15:47:55
 </span></footer><hr><div id="vcomments"></div><script src="//unpkg.com/valine/dist/Valine.min.js"></script><script>new Valine({el: "#vcomments",appId: 'TLeqR9Kf9OEdCIJbRoePAVJa-gzGzoHsz',appKey: 'yWIrEcQgcVcBIss59UlGeyV8',placeholder: 'Just go go',avatar: '',meta: undefined,pageSize: 10,lang: 'zh-CN',recordIP: false})</script></p>
 
                                 
@@ -426,7 +410,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"绘制水滴形状样式","level":"1.2.4","depth":2,"next":{"title":"Part2：JS","level":"1.3","depth":1,"path":"Part2_JS/README.md","ref":"Part2_JS/README.md","articles":[{"title":"色值转RGBA","level":"1.3.1","depth":2,"path":"Part2_JS/color2rgba.md","ref":"Part2_JS/color2rgba.md","articles":[]},{"title":"数值增加千分位符","level":"1.3.2","depth":2,"path":"Part2_JS/num_add_qfw.md","ref":"Part2_JS/num_add_qfw.md","articles":[]},{"title":"函数防抖","level":"1.3.3","depth":2,"path":"Part2_JS/fun_debounce.md","ref":"Part2_JS/fun_debounce.md","articles":[]},{"title":"数组对象去重","level":"1.3.4","depth":2,"path":"Part2_JS/objArrDeduplication.md","ref":"Part2_JS/objArrDeduplication.md","articles":[]},{"title":"判断两个对象完全相同","level":"1.3.5","depth":2,"path":"Part2_JS/objDiff.md","ref":"Part2_JS/objDiff.md","articles":[]}]},"previous":{"title":"滚动条样式美化","level":"1.2.3","depth":2,"path":"Part1_CSS/scrollBar_builty.md","ref":"Part1_CSS/scrollBar_builty.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","anchors","github","github-buttons","donate","sharing-plus","anchor-navigation-ex","copy-code-button","tbfed-pagefooter","hide-element","valine"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © 2020 Seven","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"github":{"url":"https://github.com/seven777777"},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"/images/ali_reward.jpg","alipayText":"支付宝打赏","button":"赞赏","title":"","wechat":"","wechatText":"微信打赏"},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"github-buttons":{"buttons":[{"user":"seven777777","repo":"DryCodeWarehouse","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"copy-code-button":{},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"valine":{"avatar":"","lang":"zh-CN","pageSize":10,"placeholder":"Just go go","recordIP":false,"appId":"TLeqR9Kf9OEdCIJbRoePAVJa-gzGzoHsz","appKey":"yWIrEcQgcVcBIss59UlGeyV8"}},"theme":"default","author":"seven","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Seven's Dry Code Book","language":"zh-hans","links":{"sidebar":{"seven's blog":"https://seven777777.github.io/myblog/"}},"gitbook":"3.2.3","description":"干货代码宝典"},"file":{"path":"Part1_CSS/draw_drop.md","mtime":"2020-08-18T07:24:58.184Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-18T07:30:49.993Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"绘制水滴形状样式","level":"1.2.4","depth":2,"next":{"title":"Part2：JS","level":"1.3","depth":1,"path":"Part2_JS/README.md","ref":"Part2_JS/README.md","articles":[{"title":"色值转RGBA","level":"1.3.1","depth":2,"path":"Part2_JS/color2rgba.md","ref":"Part2_JS/color2rgba.md","articles":[]},{"title":"数值增加千分位符","level":"1.3.2","depth":2,"path":"Part2_JS/num_add_qfw.md","ref":"Part2_JS/num_add_qfw.md","articles":[]},{"title":"函数防抖","level":"1.3.3","depth":2,"path":"Part2_JS/fun_debounce.md","ref":"Part2_JS/fun_debounce.md","articles":[]},{"title":"数组对象去重","level":"1.3.4","depth":2,"path":"Part2_JS/objArrDeduplication.md","ref":"Part2_JS/objArrDeduplication.md","articles":[]},{"title":"判断两个对象完全相同","level":"1.3.5","depth":2,"path":"Part2_JS/objDiff.md","ref":"Part2_JS/objDiff.md","articles":[]}]},"previous":{"title":"滚动条样式美化","level":"1.2.3","depth":2,"path":"Part1_CSS/scrollBar_builty.md","ref":"Part1_CSS/scrollBar_builty.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","anchors","github","github-buttons","donate","sharing-plus","anchor-navigation-ex","copy-code-button","tbfed-pagefooter","hide-element","valine"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © 2020 Seven","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"github":{"url":"https://github.com/seven777777"},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"/images/ali_reward.jpg","alipayText":"支付宝打赏","button":"赞赏","title":"","wechat":"","wechatText":"微信打赏"},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"github-buttons":{"buttons":[{"user":"seven777777","repo":"DryCodeWarehouse","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"copy-code-button":{},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"valine":{"avatar":"","lang":"zh-CN","pageSize":10,"placeholder":"Just go go","recordIP":false,"appId":"TLeqR9Kf9OEdCIJbRoePAVJa-gzGzoHsz","appKey":"yWIrEcQgcVcBIss59UlGeyV8"}},"theme":"default","author":"seven","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Seven's Dry Code Book","language":"zh-hans","links":{"sidebar":{"seven's blog":"https://seven777777.github.io/myblog/"}},"gitbook":"3.2.3","description":"干货代码宝典"},"file":{"path":"Part1_CSS/draw_drop.md","mtime":"2020-08-18T07:47:55.953Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-18T07:48:10.320Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
