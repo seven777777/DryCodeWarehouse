@@ -12,4 +12,6 @@
     * [函数防抖](Part2_JS/fun_debounce.md)
     * [数组对象去重](Part2_JS/objArrDeduplication.md)
     * [判断两个对象完全相同](Part2_JS/objDiff.md)
+* [Part3：aMap-高德地图](Part3_aMap/README.md)
+    * [画自定义mark](Part3_aMap/drawDiyMark.md)
 
