@@ -13,6 +13,7 @@
     * [函数防抖](Part2_JS/fun_debounce.md)
     * [数组对象去重](Part2_JS/objArrDeduplication.md)
     * [判断两个对象完全相同](Part2_JS/objEqual.md)
+    * [判断是否是数字](Part2_JS/isRealNum.md)
 * [Part3：aMap-高德地图](Part3_aMap/README.md)
     * [画自定义mark](Part3_aMap/drawDiyMark.md)
 
