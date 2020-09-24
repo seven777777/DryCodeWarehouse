@@ -22,9 +22,9 @@ let obj2 = {
 ```js
 /*
 * 测试：
-* objDiff(obj1,obj2) // true
+* objEqual(obj1,obj2) // true
 */
-objDiff(obj1,obj2){
+objEqual(obj1,obj2){
     var o1 = obj1 instanceof Object;
     var o2 = obj2 instanceof Object;
     /* 判断不是对象 */

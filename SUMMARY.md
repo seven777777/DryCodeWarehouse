@@ -6,6 +6,7 @@
     * [placeholder样式设置](Part1_CSS/placeholder_style_set.md)
     * [滚动条样式美化](Part1_CSS/scrollBar_builty.md)
     * [绘制水滴形状样式](Part1_CSS/draw_drop.md)
+    * [Grid布局实现列表等分排列](Part1_CSS/list_layout_grid.md)
 * [Part2：JS](Part2_JS/README.md)
     * [色值转RGBA](Part2_JS/color2rgba.md)
     * [数值增加千分位符](Part2_JS/num_add_qfw.md)
