@@ -16,4 +16,6 @@
     * [判断是否是数字](Part2_JS/isRealNum.md)
 * [Part3：aMap-高德地图](Part3_aMap/README.md)
     * [画自定义mark](Part3_aMap/drawDiyMark.md)
+* [Part4：页面效果](Part4_effect/README.md)
+    * [横向上下交错时间线列表布局](Part4_effect/timeline.md)
 
