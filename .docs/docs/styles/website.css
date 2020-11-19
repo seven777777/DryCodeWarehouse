@@ -1,0 +1,2 @@
+pre .copy-code-button{display: none;}
+pre:hover .copy-code-button{display: block;}
