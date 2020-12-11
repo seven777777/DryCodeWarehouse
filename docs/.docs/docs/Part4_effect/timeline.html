@@ -1,0 +1,906 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>横向上下交错时间线列表布局 · Seven's Dry Code Book</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="seven">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"seven777777","repo":"DryCodeWarehouse","type":"star","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://seven777777.github.io/myblog/" target="_blank" class="custom-link">seven's blog</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    业务代码干货宝典
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Part1_CSS/">
+            
+                <a href="../Part1_CSS/">
+            
+                    
+                    Part1：CSS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Part1_CSS/text_ellipsis.html">
+            
+                <a href="../Part1_CSS/text_ellipsis.html">
+            
+                    
+                    文本省略
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Part1_CSS/placeholder_style_set.html">
+            
+                <a href="../Part1_CSS/placeholder_style_set.html">
+            
+                    
+                    placeholder样式设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../Part1_CSS/scrollBar_builty.html">
+            
+                <a href="../Part1_CSS/scrollBar_builty.html">
+            
+                    
+                    滚动条样式美化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../Part1_CSS/draw_drop.html">
+            
+                <a href="../Part1_CSS/draw_drop.html">
+            
+                    
+                    绘制水滴形状样式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../Part1_CSS/list_layout_grid.html">
+            
+                <a href="../Part1_CSS/list_layout_grid.html">
+            
+                    
+                    Grid布局实现列表等分排列
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Part2_JS/">
+            
+                <a href="../Part2_JS/">
+            
+                    
+                    Part2：JS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Part2_JS/color2rgba.html">
+            
+                <a href="../Part2_JS/color2rgba.html">
+            
+                    
+                    色值转RGBA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../Part2_JS/num_add_qfw.html">
+            
+                <a href="../Part2_JS/num_add_qfw.html">
+            
+                    
+                    数值增加千分位符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../Part2_JS/fun_debounce.html">
+            
+                <a href="../Part2_JS/fun_debounce.html">
+            
+                    
+                    函数防抖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../Part2_JS/objArrDeduplication.html">
+            
+                <a href="../Part2_JS/objArrDeduplication.html">
+            
+                    
+                    数组对象去重
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../Part2_JS/objEqual.html">
+            
+                <a href="../Part2_JS/objEqual.html">
+            
+                    
+                    判断两个对象完全相同
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../Part2_JS/isRealNum.html">
+            
+                <a href="../Part2_JS/isRealNum.html">
+            
+                    
+                    判断是否是数字
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Part3_aMap/">
+            
+                <a href="../Part3_aMap/">
+            
+                    
+                    Part3：aMap-高德地图
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Part3_aMap/drawDiyMark.html">
+            
+                <a href="../Part3_aMap/drawDiyMark.html">
+            
+                    
+                    画自定义mark
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Part4：页面效果
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.5.1" data-path="timeline.html">
+            
+                <a href="timeline.html">
+            
+                    
+                    横向上下交错时间线列表布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >横向上下交错时间线列表布局</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x6A2A;&#x5411;&#x4E0A;&#x4E0B;&#x4EA4;&#x9519;&#x65F6;&#x95F4;&#x7EBF;&#x5217;&#x8868;&#x5E03;&#x5C40;"><b></b>&#x6A2A;&#x5411;&#x4E0A;&#x4E0B;&#x4EA4;&#x9519;&#x65F6;&#x95F4;&#x7EBF;&#x5217;&#x8868;&#x5E03;&#x5C40;</a></li></ul></div><a href="#&#x6A2A;&#x5411;&#x4E0A;&#x4E0B;&#x4EA4;&#x9519;&#x65F6;&#x95F4;&#x7EBF;&#x5217;&#x8868;&#x5E03;&#x5C40;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x6A2A;&#x5411;&#x4E0A;&#x4E0B;&#x4EA4;&#x9519;&#x65F6;&#x95F4;&#x7EBF;&#x5217;&#x8868;&#x5E03;&#x5C40;"><a name="&#x6A2A;&#x5411;&#x4E0A;&#x4E0B;&#x4EA4;&#x9519;&#x65F6;&#x95F4;&#x7EBF;&#x5217;&#x8868;&#x5E03;&#x5C40;" class="anchor-navigation-ex-anchor" href="#&#x6A2A;&#x5411;&#x4E0A;&#x4E0B;&#x4EA4;&#x9519;&#x65F6;&#x95F4;&#x7EBF;&#x5217;&#x8868;&#x5E03;&#x5C40;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x6A2A;&#x5411;&#x4E0A;&#x4E0B;&#x4EA4;&#x9519;&#x65F6;&#x95F4;&#x7EBF;&#x5217;&#x8868;&#x5E03;&#x5C40;" class="plugin-anchor" href="#&#x6A2A;&#x5411;&#x4E0A;&#x4E0B;&#x4EA4;&#x9519;&#x65F6;&#x95F4;&#x7EBF;&#x5217;&#x8868;&#x5E03;&#x5C40;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6A2A;&#x5411;&#x4E0A;&#x4E0B;&#x4EA4;&#x9519;&#x65F6;&#x95F4;&#x7EBF;&#x5217;&#x8868;&#x5E03;&#x5C40;</h1>
+<p><img src="../images/part4/timeline/pic01.png" alt=""></p>
+<h4 id="&#x5B8C;&#x6574;&#x4EE3;&#x7801;"><a name="&#x5B8C;&#x6574;&#x4EE3;&#x7801;" class="anchor-navigation-ex-anchor" href="#&#x5B8C;&#x6574;&#x4EE3;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5B8C;&#x6574;&#x4EE3;&#x7801;" class="plugin-anchor" href="#&#x5B8C;&#x6574;&#x4EE3;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B8C;&#x6574;&#x4EE3;&#x7801;</h4>
+<pre><code class="lang-vue">&lt;template&gt;
+&lt;div class=&quot;timelineBox-wrap&quot;&gt;
+    &lt;div class=&quot;timelineBox&quot; id=&quot;box&quot;&gt;
+        &lt;div class=&quot;timeline-up&quot;&gt;
+            &lt;div
+                :class=&quot;[&apos;timePoint&apos;,{&apos;special&apos;:point.index == -1}]&quot;
+                v-for=&quot;(point,index) in showData&quot;
+                :key=&quot;index&quot;&gt;
+                &lt;ul class=&quot;list&quot; v-if=&quot;(index+1)%2 == 0 &amp;&amp; point.list &amp;&amp; point.list.length&quot;&gt;
+                    &lt;li 
+                        class=&quot;listItem&quot;
+                        :style=&quot;{&apos;width&apos;:listWidth + &apos;px&apos;}&quot;
+                        v-for=&quot;(item,idx) in point.list&quot;
+                        :key=&quot;idx&quot;&gt;
+                        {{item}}
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;timeline&quot;&gt;
+        &lt;div
+            class=&quot;timePoint&quot;
+            :class=&quot;{&apos;special&apos;: point.index == 1}&quot;
+            v-for=&quot;(point,index) in showData&quot;
+            :key=&quot;index&quot;&gt;
+            &lt;div class=&quot;point&quot;&gt;&lt;/div&gt;
+            &lt;span class=&quot;yearlabel&quot;&gt;{{point.sYear}}&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+        &lt;div class=&quot;timeline-down&quot;&gt;
+            &lt;div
+                class=&quot;timePoint&quot;
+                :class=&quot;{&apos;special&apos;: point.index == 1}&quot;
+                v-for=&quot;(point,index) in showData&quot;
+                :key=&quot;index&quot;&gt;
+                &lt;ul class=&quot;list&quot; v-if=&quot;(index+1)%2 != 0 &amp;&amp; point.list &amp;&amp; point.list.length&quot;&gt;
+                    &lt;li 
+                        class=&quot;listItem&quot;
+                        :style=&quot;{&apos;width&apos;:listWidth + &apos;px&apos;}&quot;
+                        v-for=&quot;(item,idx) in point.list&quot;
+                        :key=&quot;idx&quot;&gt;
+                        {{item}}
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {
+    data() {
+        return {
+        listWidth:130,
+        showData:[
+            {
+                &quot;sYear&quot;:2006,
+                &quot;list&quot;:[
+                    &quot;&#x592A;&#x6E56;&#x9AD8;&#x5C14;&#x592B;&#x5C71;&#x5E84;&quot;
+                ],
+                &quot;index&quot;:-1
+            },
+            {
+                &quot;sYear&quot;:2008,
+                &quot;list&quot;:[
+                    &quot;&#x65B0;&#x6E56;&#x4ED9;&#x6797;&#x7FE0;&#x8C37;&quot;
+                ],
+                &quot;index&quot;:-1
+            },
+            {
+                &quot;sYear&quot;:2009,
+                &quot;list&quot;:[
+                    &quot;&#x4E2D;&#x7CAE;&#x672C;&#x6E90;&quot;
+                ],
+                &quot;index&quot;:-1
+            },
+            {
+                &quot;sYear&quot;:2010,
+                &quot;list&quot;:[
+                    &quot;&#x7EB3;&#x5C3C;&#x4E9A;&#x5C0F;&#x9547;&quot;,
+                    &quot;&#x4E07;&#x6CFD;&#x592A;&#x6E56;&#x5E84;&#x56ED;&quot;,
+                    &quot;&#x5FB7;&#x61CB;&#x5802;&quot;
+                ],
+                &quot;index&quot;:-1
+            },
+            {
+                &quot;sYear&quot;:2011,
+                &quot;list&quot;:[
+                    &quot;&#x7EFF;&#x57CE;&#x6731;&#x5BB6;&#x5C16;&#x4E1C;&#x6C99;&#x5EA6;&#x5047;&#x6751;&quot;
+                ],
+                &quot;index&quot;:-1
+            },
+            {
+                &quot;sYear&quot;:2012,
+                &quot;list&quot;:[
+                    &quot;&#x4E1C;&#x6EE9;&#x82B1;&#x56ED;&quot;,
+                    &quot;&#x6052;&#x5927;&#x6D77;&#x4E0A;&#x5A01;&#x5C3C;&#x65AF;&quot;
+                ],
+                &quot;index&quot;:-1
+            },
+            {
+                &quot;sYear&quot;:2013,
+                &quot;list&quot;:[
+                    &quot;&#x592A;&#x6E56;&#x9999;&#x6811;&#x6E7E;&quot;,
+                    &quot;&#x7EFF;&#x5730;&#x592A;&#x5E73;&#x6E56;&quot;,
+                    &quot;&#x9F99;&#x73BA;&#x592A;&#x6E56;&#x6E7E;&quot;,
+                    &quot;&#x6DC0;&#x6E56;&#x9E7F;&#x9E23;&#x4E5D;&#x91CC;&quot;
+                ],
+                &quot;index&quot;:-1
+            },
+            {
+                &quot;sYear&quot;:2014,
+                &quot;list&quot;:[
+                    &quot;&#x4E2D;&#x6D77;&#x592A;&#x5E73;&#x89C2;&#x6B62;&quot;,
+                    &quot;&#x4E5D;&#x6708;&#x6D0B;&#x623F;&quot;,
+                    &quot;&#x534E;&#x9F0E;&#x6708;&#x4EAE;&#x6E7E;&quot;,
+                    &quot;&#x82B3;&#x7538;&quot;,
+                    &quot;&#x53CC;&#x6EAA;&#x6E90;&#x749E;&#x5883;&quot;
+                ],
+                &quot;index&quot;:-1
+            },
+            {
+                &quot;sYear&quot;:2015,
+                &quot;list&quot;:[
+                    &quot;&#x6E2F;&#x4E2D;&#x65C5;&#x548C;&#x4E50;&#x5C0F;&#x9547;&quot;,
+                    &quot;&#x7EFF;&#x5730;&#x957F;&#x5C9B;&quot;,
+                    &quot;&#x7384;&#x5143;&#x5357;&#x5C71;&#x90E1;&quot;,
+                    &quot;&#x9F99;&#x6E7E;&#x6E56;&#x7554;&quot;,
+                    &quot;&#x9E3F;&#x6CF0;&#x4E50;&#x9890;&#x5C0F;&#x9547;&quot;,
+                    &quot;&#x8363;&#x76DB;&#x91D1;&#x76C6;&#x6E7E;&quot;,
+                    &quot;&#x5C1A;&#x683C;&#x964C;&#x4E0A;&#x82B1;&#x5F00;&quot;
+                ],
+                &quot;index&quot;:-1
+            },
+            {
+                &quot;sYear&quot;:2016,
+                &quot;list&quot;:[
+                    &quot;&#x5FA1;&#x56ED;&#x534A;&#x5C9B;&quot;,
+                    &quot;&#x5D07;&#x660E;&#x4E09;&#x6E58;&#x68EE;&#x6797;&#x6D77;&#x5C1A;&quot;,
+                    &quot;&#x6052;&#x6DA6;&#x592A;&#x6E56;&#x58F9;&#x53F7;&quot;,
+                    &quot;&#x534E;&#x90FD;&#x9F99;&#x5C71;&#x5E84;&#x56ED;&quot;,
+                    &quot;&#x7EFF;&#x57CE;&#x6625;&#x98CE;&#x5341;&#x91CC;&quot;,
+                    &quot;&#x7EFF;&#x57CE;&#x9F99;&#x738B;&#x6EAA;&quot;,
+                    &quot;&#x7EFF;&#x90FD;&#x5C71;&#x4E0E;&#x5885;&quot;
+                ],
+                &quot;index&quot;:-1
+            },
+            {
+                &quot;sYear&quot;:2017,
+                &quot;list&quot;:[
+                    &quot;&#x7EFF;&#x57CE;&#x89C2;&#x4E91;&#x5C0F;&#x9547;&quot;,
+                    &quot;&#x6052;&#x5927;&#x9999;&#x6E56;&#x5DE6;&#x5CB8;&quot;,
+                    &quot;&#x5B89;&#x5409;&#x6E05;&#x534E;&#x56ED;&quot;,
+                    &quot;&#x5343;&#x5C9B;&#x6E56;&#x5609;&#x82D1;&quot;,
+                    &quot;&#x8D8A;&#x5267;&#x5C0F;&#x9547;&quot;,
+                    &quot;&#x626C;&#x5DDE;&#x73A5;&#x73D1;&#x6E56;&quot;,
+                    &quot;&#x84DD;&#x57CE;&#x90E1;&#x5B89;&#x91CC;&quot;,
+                    &quot;&#x96C5;&#x5C45;&#x4E50;&#x5C71;&#x6E56;&#x57CE;&quot;,
+                    &quot;&#x94F6;&#x6DA6;&#x84DD;&#x57CE;&#x5929;&#x4F7F;&#x5C0F;&#x9547;&quot;,
+                    &quot;&#x8363;&#x76DB;&#xB7;&#x6D66;&#x6EAA;&#x6C34;&#x9547;&quot;,
+                    &quot;&#x83B2;&#x82B1;&#x5C0F;&#x9547;&quot;,
+                    &quot;&#x56FD;&#x745E;&#x701B;&#x53F0;&quot;
+                ],
+                &quot;index&quot;:-1
+            },
+            {
+                &quot;sYear&quot;:2018,
+                &quot;list&quot;:[
+                    &quot;&#x534E;&#x4FA8;&#x57CE;&#x7FE1;&#x7FE0;&#x5929;&#x57DF;&quot;,
+                    &quot;&#x78A7;&#x6842;&#x56ED;&#xB7;&#x6CF7;&#x60A6;&quot;,
+                    &quot;&#x78A7;&#x6842;&#x56ED;&#x5341;&#x91CC;&#x82B3;&#x534E;&quot;,
+                    &quot;&#x5BCC;&#x529B;&#xB7;&#x6E56;&#x6EE8;&#x60A6;&#x5C45;&quot;,
+                    &quot;&#x4E91;&#x6C34;&#x6C5F;&#x5357;&quot;,
+                    &quot;&#x5D07;&#x660E;&#x5C9B;&#x5927;&#x7231;&#x57CE;&quot;
+                ],
+                &quot;index&quot;:1
+            },
+            {
+                &quot;sYear&quot;:2019,
+                &quot;list&quot;:[
+                    &quot;&#x8FDC;&#x6D0B;&#x6843;&#x82B1;&#x5C9B;&quot;,
+                    &quot;&#x5929;&#x6CFD;&#x6E56;&#x666F;&#x5E84;&#x56ED;&quot;,
+                    &quot;&#x6052;&#x5927;&#x5FA1;&#x6D77;&#x5929;&#x4E0B;&quot;,
+                    &quot;&#x4E1D;&#x7EF8;&#x5C0F;&#x9547;&quot;,
+                    &quot;&#x84DD;&#x57CE;&#x98CE;&#x8377;&#x4E5D;&#x91CC;&quot;
+                ],
+                &quot;index&quot;:-1
+            },
+            {
+                &quot;sYear&quot;:2020,
+                &quot;list&quot;:[
+                    &quot;&#x676D;&#x5DDE;&#x6843;&#x674E;&#x6625;&#x98CE;&quot;
+                ],
+                &quot;index&quot;:-1
+            }
+        ]
+        };
+    },
+    mounted() {
+        let _this = this
+        _this.setWidth()
+        window.addEventListener(&apos;resize&apos;, function() {
+            _this.setWidth()
+        })
+    },
+    methods: {
+        setWidth(){
+            this.mainWidth = document.getElementById(&apos;box&apos;).clientWidth - 100
+            let listWidth = 110
+            let len = this.showData.length
+            let n = Math.ceil(len / 2)
+            // &#x51CF;&#x53BB;&#x4E00;&#x4E9B;&#x8FB9;&#x8DDD;
+            listWidth = (this.mainWidth - 20) / n -10
+            this.listWidth = listWidth
+        }
+    }
+};
+&lt;/script&gt;
+
+&lt;style lang=&quot;scss&quot;&gt;
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+body {
+    background-color: #21222e;
+}
+.timelineBox-wrap{
+    width:80%;
+    margin:0 auto;
+    padding:20px;
+}
+.timelineBox {
+    position: relative;
+    .timeline {
+        width: 100%;
+        height: 2px;
+        background-color: #34475f;
+        position: relative;
+        padding: 0 15px 0 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 10;
+        &amp;::after {
+            content: &apos;&apos;;
+            width: 0;
+            height: 0;
+            border-color: transparent transparent #33455c #33455c;
+            border-style: solid;
+            border-width: 5px 10px;
+            position: absolute;
+            right: 1px;
+            bottom: 2px;
+        }
+    }
+    .list {
+        width: 110px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        .listItem {
+            width: 100%;
+            line-height: 1.5;
+            border-radius: 4px;
+            background-color: rgba(0, 145, 230, 0.5);
+            border: 1px solid #476b8f;
+            color: #ffffff;
+            font-size: 13px;
+            text-align: center;
+            padding: 0 5px;
+        }
+        &amp;:before {
+            content: &apos;&apos;;
+            width: 1px;
+            height: 44px;
+            background-color: #33455c;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    .timePoint {
+        width: 8px;
+        height: auto;
+        position: relative;
+
+        .point {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #d89931;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+        &amp;.special {
+            .point {
+                width: 12px;
+                height: 12px;
+                background-color: #ff4f12;
+            }
+        }
+        .yearlabel {
+            position: absolute;
+            color: #c5c7cc;
+            font-size: 12px;
+            top: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &amp;:nth-child(2n) {
+            .yearlabel {
+                top: -25px;
+            }
+        }
+    }
+    .timeline-up,
+    .timeline-down {
+        padding: 0 15px 0 10px;
+        display: flex;
+        justify-content: space-around;
+
+        .timePoint {
+            display: flex;
+            justify-content: center;
+            .listItem {
+                width: 110px;
+                max-width: 180px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+    .timeline-up {
+        padding-bottom: 44px;
+        .list {
+            flex-direction: column-reverse;
+            .listItem {
+                margin-top: 8px;
+            }
+            &amp;:before {
+                bottom: -44px;
+            }
+        }
+    }
+    .timeline-down {
+        padding-top: 44px;
+        .list {
+            .listItem {
+                margin-bottom: 8px;
+            }
+            &amp;:before {
+                top: -44px;
+                z-index: 0;
+            }
+        }
+    }
+}
+
+&lt;/style&gt;
+</code></pre>
+<p><footer class="page-footer"><span class="copyright">Copyright &#xA9; 2020 Seven all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2020-10-10 16:45:21
+</span></footer><hr><div id="vcomments"></div><script src="//unpkg.com/valine/dist/Valine.min.js"></script><script>new Valine({el: "#vcomments",appId: 'TLeqR9Kf9OEdCIJbRoePAVJa-gzGzoHsz',appKey: 'yWIrEcQgcVcBIss59UlGeyV8',placeholder: 'Just go go',avatar: '',meta: undefined,pageSize: 10,lang: 'zh-CN',recordIP: false})</script></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Part4：页面效果">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"横向上下交错时间线列表布局","level":"1.5.1","depth":2,"previous":{"title":"Part4：页面效果","level":"1.5","depth":1,"path":"Part4_effect/README.md","ref":"Part4_effect/README.md","articles":[{"title":"横向上下交错时间线列表布局","level":"1.5.1","depth":2,"path":"Part4_effect/timeline.md","ref":"Part4_effect/timeline.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","anchors","github","github-buttons","donate","sharing-plus","anchor-navigation-ex","copy-code-button","tbfed-pagefooter","hide-element","valine"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © 2020 Seven","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"github":{"url":"https://github.com/seven777777"},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"/images/ali_reward.jpg","alipayText":"支付宝打赏","button":"赞赏","title":"","wechat":"","wechatText":"微信打赏"},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"github-buttons":{"buttons":[{"user":"seven777777","repo":"DryCodeWarehouse","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"copy-code-button":{},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"valine":{"avatar":"","lang":"zh-CN","pageSize":10,"placeholder":"Just go go","recordIP":false,"appId":"TLeqR9Kf9OEdCIJbRoePAVJa-gzGzoHsz","appKey":"yWIrEcQgcVcBIss59UlGeyV8"}},"theme":"default","author":"seven","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Seven's Dry Code Book","language":"zh-hans","links":{"sidebar":{"seven's blog":"https://seven777777.github.io/myblog/"}},"gitbook":"3.2.3","description":"干货代码宝典"},"file":{"path":"Part4_effect/timeline.md","mtime":"2020-10-10T08:45:21.353Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-10T08:45:49.588Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
