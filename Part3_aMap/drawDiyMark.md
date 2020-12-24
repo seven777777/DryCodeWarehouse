@@ -6,10 +6,10 @@
 
 ```js
 // js
-var cpoint = [116.397428, 39.90923]; //地图中心点坐标
+var cpoint = [116.411568,39.908071]; //地图中心点坐标
 var centerpointer = new AMap.LngLat(cpoint[0],cpoint[1]);
 
-var map = new Amap.Map(dom , {
+var map = new AMap.Map(dom , {
     resizeEnable: true,
     zoom: 11, //初始化地图层级
     center: cpoint, //初始化地图中心点
@@ -22,7 +22,9 @@ function drawMark(map,center,content,otherConfig={}){
         zIndex:200,
         anchor:'bottom-center', // 设置锚点方位
         position: center, //基点位置
-        offset: new AMap.Pixel(0, 0), //相对于基点的偏移位置
+        //相对于基点的偏移位置
+        // 因为水滴样式底部的伪类样式超过容器底部14像素，此处设置一个偏移量（具体设置依据实际情况）
+        offset: new AMap.Pixel(0, -14), 
         content: content,   //自定义点标记覆盖物内容
         ...otherConfig //其他定制化设置
     });
@@ -31,9 +33,7 @@ function drawMark(map,center,content,otherConfig={}){
 }
 
 
-var content = '<div class="mark_wrap">'
-            +'  <div class="dropmarker">' + 1 + '</div>'
-            +'</div>'
+var content = '<div class="dropmarker">' + 1 + '</div>'
 
 drawMark(map,centerpointer,content)
 ```
@@ -42,17 +42,6 @@ drawMark(map,centerpointer,content)
 // scss
 // 样式仅做示例，可根据实际情况调整
 // 地图标记物
-.amap-marker-content {
-    white-space: normal !important;
-}
-
-// 不定尺寸mark盒子容器
-.mark_wrap {
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    position: relative;
-}
 // 水滴标记
 .dropmarker{
     width: 26px;
@@ -62,10 +51,6 @@ drawMark(map,centerpointer,content)
     line-height: 26px;
     text-align: center;
     color: white;
-    position: absolute;
-    left: 50%;
-    bottom: 8px;
-    transform: translateX(-50%);
     &:after {
         content: '';
         width: 0px;
