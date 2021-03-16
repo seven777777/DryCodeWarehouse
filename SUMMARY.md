@@ -7,6 +7,8 @@
     * [滚动条样式美化](Part1_CSS/scrollBar_builty.md)
     * [绘制水滴形状样式](Part1_CSS/draw_drop.md)
     * [Grid布局实现列表等分排列](Part1_CSS/list_layout_grid.md)
+    * [使用自定义字体](Part1_CSS/diy_fontfamily.md)
+    * [不规则阴影](Part1_CSS/anomaly_shadow.md)
 * [Part2：JS](Part2_JS/README.md)
     * [色值转RGBA](Part2_JS/color2rgba.md)
     * [色值转换rgb转Hex](Part2_JS/rgbToHex.md)
