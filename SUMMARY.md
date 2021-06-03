@@ -9,6 +9,7 @@
     * [Grid布局实现列表等分排列](Part1_CSS/list_layout_grid.md)
     * [使用自定义字体](Part1_CSS/diy_fontfamily.md)
     * [不规则阴影](Part1_CSS/anomaly_shadow.md)
+    * [斑马纹背景](Part1_CSS/zebra_bg.md)
 * [Part2：JS](Part2_JS/README.md)
     * [色值转RGBA](Part2_JS/color2rgba.md)
     * [色值转换rgb转Hex](Part2_JS/rgbToHex.md)
@@ -23,4 +24,6 @@
     * [画自定义mark](Part3_aMap/drawDiyMark.md)
 * [Part4：页面效果](Part4_effect/README.md)
     * [横向上下交错时间线列表布局](Part4_effect/timeline.md)
+    * [优惠券-内圆角带阴影](Part4_effect/coupon.md)
+    * [文本行的斑马条纹](Part4_effect/zebra_bg_txt.md)
 
