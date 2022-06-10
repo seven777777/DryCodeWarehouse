@@ -11,6 +11,7 @@
     * [不规则阴影](Part1_CSS/anomaly_shadow.md)
     * [斑马纹背景](Part1_CSS/zebra_bg.md)
     * [渐变虚点线](Part1_CSS/dottedGradient.md)
+    * [不规则内容显示](Part1_CSS/shape_outside.md)
 * [Part2：JS](Part2_JS/README.md)
     * [色值转 RGBA](Part2_JS/color2rgba.md)
     * [色值转换 rgb 转 Hex](Part2_JS/rgbToHex.md)
