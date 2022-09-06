@@ -12,10 +12,12 @@ colorToRGBA(color, opacity) {
     let _color
     if (color.substr(0, 1) == "#")
         _color = color.substring(1);
+    if (_color.length == 3)
+		_color = _color.split('').map(e => '' + e + e).join('')
     if (_color.length != 6)
         return '';
 
-    _color = color.toLowerCase()
+    _color = _color.toLowerCase()
 
     var rgb = new Array();
     for (var x = 0; x < 3; x++) {
