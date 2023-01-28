@@ -22,6 +22,7 @@
     * [数组对象去重](Part2_JS/objArrDeduplication.md)
     * [判断两个对象完全相同](Part2_JS/objEqual.md)
     * [判断是否是数字](Part2_JS/isRealNum.md)
+    * [常用时间计算](Part2_JS/time_calc.md)
 * [Part3：aMap-高德地图](Part3_aMap/README.md)
     * [画自定义 mark](Part3_aMap/drawDiyMark.md)
 * [Part4：页面效果](Part4_effect/README.md)
