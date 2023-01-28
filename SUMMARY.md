@@ -28,4 +28,9 @@
     * [横向上下交错时间线列表布局](Part4_effect/timeline.md)
     * [优惠券-内圆角带阴影](Part4_effect/coupon.md)
     * [文本行的斑马条纹](Part4_effect/zebra_bg_txt.md)
+* [Part5：其它](Part5_othert/README.md)
+    * [.gitignore失效解决](Part5_othert/gitignore.md)
+    * [mddir生成目录结构树](Part5_othert/mddir_tree.md)
+    * [echarts图变模糊解决办法](Part5_othert/echarts_clear.md)
+    * [node版本管理](Part5_othert/node_version.md)
 
