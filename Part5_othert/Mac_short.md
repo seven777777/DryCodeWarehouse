@@ -5,7 +5,12 @@
 | 下一个标签页 | Control + Tab |
 | 上一个标签页 | Control + Shift + Tab |
 | 切换桌面 | Control + 左箭头 / 右箭头 |
-| 打开“强制退出”窗口，如果有应用程序无响应，可在窗口列表中选择强制退出 | Command + Option + esc |
+| 打开“强制退出”窗口 | Command + Option + esc |
+| 网页强刷 | Command + Shift + r |
+| 键盘语言切换 | Control + Shift + 空格键 |
+| 切换到使用过的上一种键盘语言 | Control + 空格键 |
+| 撤消上一步操作 | Control + Z |
+| 重新执行上一步操作 | Control + Shift + Z |
 ## 文本处理
 | 操作 | 快捷键 |
 | --- | --- |
