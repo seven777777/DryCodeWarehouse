@@ -34,4 +34,5 @@
     * [mddir生成目录结构树](Part5_othert/mddir_tree.md)
     * [echarts图变模糊解决办法](Part5_othert/echarts_clear.md)
     * [node版本管理](Part5_othert/node_version.md)
+    * [Mac快捷键](Part5_othert/Mac_short.md)
 
