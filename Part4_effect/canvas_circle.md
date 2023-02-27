@@ -38,7 +38,6 @@ setTimeout(() => {
  */
 function baseDraw(percent) {
     if (percent > 100 || percent < 0) return
-    console.log($("#canvas"));
     var c = $("#canvas")[0],
         ctx = c.getContext('2d'),
         cWidth = c.width,
