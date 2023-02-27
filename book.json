@@ -28,19 +28,21 @@
         "copy-code-button",
         "tbfed-pagefooter",
         "hide-element",
-        "valine"
+        "valine",
+        "livereload"
     ],
     "pluginsConfig": {
         "github": {
             "url": "https://github.com/seven777777"
         },
         "github-buttons": {
-            "buttons": [{
-                "user": "seven777777",
-                "repo": "DryCodeWarehouse",
-                "type": "star",
-                "size": "small",
-                "count": true
+            "buttons": [
+                {
+                    "user": "seven777777",
+                    "repo": "DryCodeWarehouse",
+                    "type": "star",
+                    "size": "small",
+                    "count": true
                 }
             ]
         },
@@ -69,20 +71,28 @@
             "weibo": false,
             "whatsapp": false,
             "all": [
-                "google", "facebook", "weibo", "twitter",
-                "qq", "qzone", "linkedin", "pocket"
+                "google",
+                "facebook",
+                "weibo",
+                "twitter",
+                "qq",
+                "qzone",
+                "linkedin",
+                "pocket"
             ]
         },
         "anchor-navigation-ex": {
             "showLevel": false
         },
         "tbfed-pagefooter": {
-            "copyright":"Copyright © 2020 Seven",
+            "copyright": "Copyright © 2020 Seven",
             "modify_label": "该文件修订时间：",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
         "hide-element": {
-            "elements": [".gitbook-link"]
+            "elements": [
+                ".gitbook-link"
+            ]
         },
         "valine": {
             "appId": "TLeqR9Kf9OEdCIJbRoePAVJa-gzGzoHsz",
