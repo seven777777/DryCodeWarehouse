@@ -1,0 +1,928 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>canvas圆环组件 · Seven's Dry Code Book</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="seven">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../Part5_othert/" />
+    
+    
+    <link rel="prev" href="zebra_bg_txt.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"seven777777","repo":"DryCodeWarehouse","type":"star","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://seven777777.github.io/myblog/" target="_blank" class="custom-link">seven's blog</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    业务代码干货宝典
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Part1_CSS/">
+            
+                <a href="../Part1_CSS/">
+            
+                    
+                    Part1：CSS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Part1_CSS/text_ellipsis.html">
+            
+                <a href="../Part1_CSS/text_ellipsis.html">
+            
+                    
+                    文本省略
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Part1_CSS/placeholder_style_set.html">
+            
+                <a href="../Part1_CSS/placeholder_style_set.html">
+            
+                    
+                    placeholder 样式设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../Part1_CSS/scrollBar_builty.html">
+            
+                <a href="../Part1_CSS/scrollBar_builty.html">
+            
+                    
+                    滚动条样式美化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../Part1_CSS/draw_drop.html">
+            
+                <a href="../Part1_CSS/draw_drop.html">
+            
+                    
+                    绘制水滴形状样式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../Part1_CSS/list_layout_grid.html">
+            
+                <a href="../Part1_CSS/list_layout_grid.html">
+            
+                    
+                    Grid 布局实现列表等分排列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../Part1_CSS/diy_fontfamily.html">
+            
+                <a href="../Part1_CSS/diy_fontfamily.html">
+            
+                    
+                    使用自定义字体
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../Part1_CSS/anomaly_shadow.html">
+            
+                <a href="../Part1_CSS/anomaly_shadow.html">
+            
+                    
+                    不规则阴影
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../Part1_CSS/zebra_bg.html">
+            
+                <a href="../Part1_CSS/zebra_bg.html">
+            
+                    
+                    斑马纹背景
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../Part1_CSS/dottedGradient.html">
+            
+                <a href="../Part1_CSS/dottedGradient.html">
+            
+                    
+                    渐变虚点线
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../Part1_CSS/shape_outside.html">
+            
+                <a href="../Part1_CSS/shape_outside.html">
+            
+                    
+                    不规则内容显示
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Part2_JS/">
+            
+                <a href="../Part2_JS/">
+            
+                    
+                    Part2：JS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Part2_JS/color2rgba.html">
+            
+                <a href="../Part2_JS/color2rgba.html">
+            
+                    
+                    色值转 RGBA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../Part2_JS/rgbToHex.html">
+            
+                <a href="../Part2_JS/rgbToHex.html">
+            
+                    
+                    色值转换 rgb 转 Hex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../Part2_JS/hexToRgb.html">
+            
+                <a href="../Part2_JS/hexToRgb.html">
+            
+                    
+                    色值转换 Hex 转 rgb
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../Part2_JS/colorGradient.html">
+            
+                <a href="../Part2_JS/colorGradient.html">
+            
+                    
+                    计算两个色值中的过渡色值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../Part2_JS/num_add_qfw.html">
+            
+                <a href="../Part2_JS/num_add_qfw.html">
+            
+                    
+                    数值增加千分位符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../Part2_JS/fun_debounce.html">
+            
+                <a href="../Part2_JS/fun_debounce.html">
+            
+                    
+                    函数防抖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../Part2_JS/objArrDeduplication.html">
+            
+                <a href="../Part2_JS/objArrDeduplication.html">
+            
+                    
+                    数组对象去重
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../Part2_JS/objEqual.html">
+            
+                <a href="../Part2_JS/objEqual.html">
+            
+                    
+                    判断两个对象完全相同
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../Part2_JS/isRealNum.html">
+            
+                <a href="../Part2_JS/isRealNum.html">
+            
+                    
+                    判断是否是数字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../Part2_JS/time_calc.html">
+            
+                <a href="../Part2_JS/time_calc.html">
+            
+                    
+                    常用时间计算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../Part2_JS/deepclone.html">
+            
+                <a href="../Part2_JS/deepclone.html">
+            
+                    
+                    手撕：深拷贝
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Part3_aMap/">
+            
+                <a href="../Part3_aMap/">
+            
+                    
+                    Part3：aMap-高德地图
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Part3_aMap/drawDiyMark.html">
+            
+                <a href="../Part3_aMap/drawDiyMark.html">
+            
+                    
+                    画自定义 mark
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Part4：页面效果
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="timeline.html">
+            
+                <a href="timeline.html">
+            
+                    
+                    横向上下交错时间线列表布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="coupon.html">
+            
+                <a href="coupon.html">
+            
+                    
+                    优惠券-内圆角带阴影
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="zebra_bg_txt.html">
+            
+                <a href="zebra_bg_txt.html">
+            
+                    
+                    文本行的斑马条纹
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.4" data-path="canvas_circle.html">
+            
+                <a href="canvas_circle.html">
+            
+                    
+                    canvas圆环组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Part5_othert/">
+            
+                <a href="../Part5_othert/">
+            
+                    
+                    Part5：其它
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Part5_othert/gitignore.html">
+            
+                <a href="../Part5_othert/gitignore.html">
+            
+                    
+                    .gitignore失效解决
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../Part5_othert/mddir_tree.html">
+            
+                <a href="../Part5_othert/mddir_tree.html">
+            
+                    
+                    mddir生成目录结构树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../Part5_othert/echarts_clear.html">
+            
+                <a href="../Part5_othert/echarts_clear.html">
+            
+                    
+                    echarts图变模糊解决办法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../Part5_othert/node_version.html">
+            
+                <a href="../Part5_othert/node_version.html">
+            
+                    
+                    node版本管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../Part5_othert/Mac_short.html">
+            
+                <a href="../Part5_othert/Mac_short.html">
+            
+                    
+                    Mac快捷键
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >canvas圆环组件</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#canvas&#x5706;&#x73AF;&#x7EC4;&#x4EF6;"><b></b>canvas&#x5706;&#x73AF;&#x7EC4;&#x4EF6;</a></li></ul></div><a href="#canvas&#x5706;&#x73AF;&#x7EC4;&#x4EF6;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="canvas&#x5706;&#x73AF;&#x7EC4;&#x4EF6;"><a name="canvas&#x5706;&#x73AF;&#x7EC4;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#canvas&#x5706;&#x73AF;&#x7EC4;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="canvas&#x5706;&#x73AF;&#x7EC4;&#x4EF6;" class="plugin-anchor" href="#canvas&#x5706;&#x73AF;&#x7EC4;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>canvas&#x5706;&#x73AF;&#x7EC4;&#x4EF6;</h1>
+<p><img src="../images/part4/canvas_circle/pic01.png" alt=""></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">canvas</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;canvas&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;300&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;200&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">canvas</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> width = <span class="hljs-number">300</span>, height = <span class="hljs-number">200</span>;<span class="hljs-comment">//canvas&#x753B;&#x7EB8;&#x5BBD;&#x9AD8;</span>
+<span class="hljs-keyword">let</span> radius = <span class="hljs-string">&apos;90%&apos;</span>;<span class="hljs-comment">// &#x63A7;&#x5236;&#x5927;&#x5C0F; ********</span>
+<span class="hljs-comment">// &#x57FA;&#x7840;&#x5706;&#x73AF;&#x8272;&#x503C;</span>
+<span class="hljs-keyword">let</span> baseColor = <span class="hljs-string">&apos;#F3F6FD&apos;</span>
+<span class="hljs-comment">// &#x63CF;&#x8FB9;&#x8272;&#x503C;&#xFF08;&#x53EF;&#x4EE5;&#x5355;&#x8272;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x53EF;&#x4EE5;&#x6570;&#x7EC4;&#x8272;&#x503C;&#x6E10;&#x53D8;&#xFF09;</span>
+<span class="hljs-keyword">let</span> coverColor = [<span class="hljs-string">&apos;#FDEE9A&apos;</span>, <span class="hljs-string">&apos;#F76B1C&apos;</span>]
+<span class="hljs-comment">// &#x4E0D;&#x5E26;&#x5355;&#x4F4D;&#x7684;&#x767E;&#x5206;&#x503C;&#xFF0C;90%&#x2014;90</span>
+<span class="hljs-keyword">let</span> value = <span class="hljs-number">90</span> <span class="hljs-comment">//&#x63A7;&#x5236;&#x586B;&#x5145;&#x767E;&#x5206;&#x6BD4; ********</span>
+<span class="hljs-keyword">let</span> percent = (value + <span class="hljs-string">&apos;&apos;</span>).split(<span class="hljs-string">&apos;%&apos;</span>)[<span class="hljs-number">0</span>]
+<span class="hljs-keyword">if</span> (!<span class="hljs-built_in">isNaN</span>(percent)) {
+    percent = <span class="hljs-built_in">Number</span>(percent)
+} <span class="hljs-keyword">else</span> {
+    percent = <span class="hljs-number">0</span>
+}
+<span class="hljs-comment">// &#x5916;&#x5C42;&#x534A;&#x5F84;</span>
+<span class="hljs-keyword">let</span> baseLength = width &gt; height ? height : width
+<span class="hljs-keyword">let</span> basePercent = radius.split(<span class="hljs-string">&apos;%&apos;</span>)[<span class="hljs-number">0</span>] / <span class="hljs-number">100</span>
+<span class="hljs-keyword">let</span> outR = (baseLength * basePercent) / <span class="hljs-number">2</span>
+<span class="hljs-comment">// &#x5185;&#x5C42;&#x534A;&#x5F84;</span>
+<span class="hljs-keyword">let</span> innerR = outR - <span class="hljs-number">6</span>
+
+setTimeout(() =&gt; {
+    baseDraw(percent)
+})
+
+<span class="hljs-comment">/**
+ * &#x987A;&#x65F6;&#x9488;&#x65B9;&#x5411;&#x753B;&#x56FE;&#xFF0C;&#x8D77;&#x59CB;&#x70B9;&#x5728;&#x5DE6;&#x4FA7;
+ * @param  {[number]} percent
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">baseDraw</span>(<span class="hljs-params">percent</span>) </span>{
+    <span class="hljs-keyword">if</span> (percent &gt; <span class="hljs-number">100</span> || percent &lt; <span class="hljs-number">0</span>) <span class="hljs-keyword">return</span>
+    <span class="hljs-built_in">console</span>.log($(<span class="hljs-string">&quot;#canvas&quot;</span>));
+    <span class="hljs-keyword">var</span> c = $(<span class="hljs-string">&quot;#canvas&quot;</span>)[<span class="hljs-number">0</span>],
+        ctx = c.getContext(<span class="hljs-string">&apos;2d&apos;</span>),
+        cWidth = c.width,
+        cHeight = c.height,
+        PI = <span class="hljs-built_in">Math</span>.PI,
+        sA = (<span class="hljs-built_in">Math</span>.PI * <span class="hljs-number">5</span>) / <span class="hljs-number">6</span>
+    <span class="hljs-keyword">var</span> baseRadius = PI + (PI - sA) * <span class="hljs-number">2</span> <span class="hljs-comment">//&#x59CB;&#x7EC8;&#x4FDD;&#x8BC1;&#x4E0E;&#x521D;&#x59CB;&#x89D2;&#x5EA6;&#x5BF9;&#x79F0;&#xFF0C;&#x8BA1;&#x7B97;&#x57FA;&#x4E8E;&#x987A;&#x65F6;&#x9488;&#x753B;&#x56FE;</span>
+    <span class="hljs-keyword">var</span> step = baseRadius / <span class="hljs-number">100</span> <span class="hljs-comment">// &#x4E00;&#x4E2A;1%&#x5BF9;&#x5E94;&#x7684;&#x5F27;&#x5EA6;&#x5927;&#x5C0F;</span>
+    <span class="hljs-keyword">var</span> sE = sA + baseRadius
+
+    <span class="hljs-keyword">var</span> baseEnd = sA + step * percent
+
+    <span class="hljs-keyword">var</span> baseStrokeStyle
+    <span class="hljs-keyword">if</span> (!<span class="hljs-built_in">Array</span>.isArray(coverColor)) {
+        baseStrokeStyle = coverColor
+    } <span class="hljs-keyword">else</span> {
+        <span class="hljs-keyword">if</span> (coverColor.length == <span class="hljs-number">2</span>) {
+            <span class="hljs-keyword">const</span> arrList = gradient(coverColor[<span class="hljs-number">0</span>], coverColor[<span class="hljs-number">1</span>], <span class="hljs-number">100</span>)
+            <span class="hljs-comment">// &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6E10;&#x53D8;&#xFF0C;&#x53C2;&#x6570;&#x4E3A;&#xFF1A;&#x5F00;&#x59CB;x&#x5750;&#x6807;&#x3001;&#x5F00;&#x59CB;y&#x5750;&#x6807;&#x3001;&#x7ED3;&#x675F;x&#x5750;&#x6807;&#x3001;&#x7ED3;&#x675F;y&#x5750;&#x6807;&#x3001;</span>
+            <span class="hljs-keyword">var</span> grd = ctx.createLinearGradient(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, (PI * innerR * <span class="hljs-number">2</span> * <span class="hljs-number">3</span>) / <span class="hljs-number">4</span>, <span class="hljs-number">0</span>)
+            <span class="hljs-comment">// &#x4E3A;&#x6E10;&#x53D8;&#x6DFB;&#x52A0;&#x989C;&#x8272;&#xFF0C;&#x53C2;&#x6570;1&#x8868;&#x793A;&#x6E10;&#x53D8;&#x5F00;&#x59CB;&#x548C;&#x7ED3;&#x675F;&#x4E4B;&#x95F4;&#x7684;&#x4F4D;&#x7F6E;&#xFF08;&#x7528;0&#x81F3;1&#x7684;&#x5360;&#x6BD4;&#x8868;&#x793A;&#xFF09;&#xFF0C;&#x53C2;&#x6570;2&#x4F4D;&#x989C;&#x8272;</span>
+            grd.addColorStop(<span class="hljs-number">0</span>, arrList[<span class="hljs-number">0</span>])
+            <span class="hljs-comment">// grd.addColorStop(0.8, arrList[parseInt(percent)])</span>
+            grd.addColorStop(<span class="hljs-number">1</span>, arrList[<span class="hljs-built_in">parseInt</span>(percent) &gt; <span class="hljs-number">0</span> ? <span class="hljs-built_in">parseInt</span>(percent) - <span class="hljs-number">1</span> : <span class="hljs-number">0</span>])
+            baseStrokeStyle = grd
+        }
+    }
+
+    <span class="hljs-comment">// &#x753B;&#x7070;&#x8272;&#x5706;&#x5F27;</span>
+    drawCanvas(ctx, cWidth / <span class="hljs-number">2</span>, (cHeight * <span class="hljs-number">3</span>) / <span class="hljs-number">4</span>, outR, sA, sE, baseColor, <span class="hljs-number">2</span>) <span class="hljs-comment">//&#x5916;&#x5B9E;&#x7EBF;&#x5706;&#x5F27;</span>
+    drawCanvas(ctx, cWidth / <span class="hljs-number">2</span>, (cHeight * <span class="hljs-number">3</span>) / <span class="hljs-number">4</span>, innerR, sA, sE, baseColor, <span class="hljs-number">1</span>, <span class="hljs-string">&apos;dashed&apos;</span>) <span class="hljs-comment">//&#x5185;&#x865A;&#x7EBF;&#x5706;&#x5F27;</span>
+
+    <span class="hljs-keyword">if</span> (percent != <span class="hljs-number">0</span>) {
+        <span class="hljs-comment">// &#x753B;&#x4E3B;&#x4F53;&#x90E8;&#x5206;&#x5706;&#x5F27;</span>
+        drawCanvas(ctx, cWidth / <span class="hljs-number">2</span>, (cHeight * <span class="hljs-number">3</span>) / <span class="hljs-number">4</span>, outR, sA, baseEnd, baseStrokeStyle, <span class="hljs-number">2</span>) <span class="hljs-comment">//&#x5916;&#x5B9E;&#x7EBF;&#x5706;&#x5F27;</span>
+        drawCanvas(ctx, cWidth / <span class="hljs-number">2</span>, (cHeight * <span class="hljs-number">3</span>) / <span class="hljs-number">4</span>, innerR, sA, baseEnd, baseStrokeStyle, <span class="hljs-number">1</span>, <span class="hljs-string">&apos;dashed&apos;</span>) <span class="hljs-comment">//&#x5185;&#x865A;&#x7EBF;&#x5706;&#x5F27;</span>
+        <span class="hljs-comment">// &#x753B;&#x5706;&#x7EC8;&#x70B9;</span>
+        <span class="hljs-keyword">var</span> angle = <span class="hljs-number">2</span> * PI - baseEnd <span class="hljs-comment">// &#x8F6C;&#x6362;&#x6210;&#x9006;&#x65F6;&#x9488;&#x65B9;&#x5411;&#x7684;&#x5F27;&#x5EA6;&#xFF08;&#x4E09;&#x89D2;&#x51FD;&#x6570;&#x4E2D;&#x7684;&#xFF09;</span>
+        <span class="hljs-keyword">var</span> xPos = <span class="hljs-built_in">Math</span>.cos(angle) * outR + cWidth / <span class="hljs-number">2</span> <span class="hljs-comment">// &#x7EC8;&#x70B9;&#x5706; &#x5706;&#x5FC3;&#x7684;x&#x5750;&#x6807;</span>
+        <span class="hljs-keyword">var</span> yPos = -<span class="hljs-built_in">Math</span>.sin(angle) * outR + (cHeight * <span class="hljs-number">3</span>) / <span class="hljs-number">4</span> <span class="hljs-comment">// &#x7EC8;&#x70B9;&#x5706; &#x5706;&#x5FC3;&#x7684;y&#x5750;&#x6807;</span>
+        drawCanvas(ctx, xPos, yPos, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">2</span> * PI, baseEnd, <span class="hljs-number">1</span>)
+    }
+}
+<span class="hljs-comment">/**
+ * x,y&#xFF1A;&#x5706;&#x5FC3;&#x5750;&#x6807;
+ * r&#xFF1A;&#x5706;&#x534A;&#x5F84;
+ * sAngle,eAngle&#xFF1A;&#x8D77;&#x6B62;&#x89D2;&#x5EA6;&#xFF08;&#x5F27;&#x5EA6;&#x8BB0;&#xFF09;
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">drawCanvas</span>(<span class="hljs-params">ctx, x, y, r, sAngle, eAngle, color, lineWidth, lineStyle = &apos;solid&apos;</span>) </span>{
+    ctx.beginPath()
+    ctx.lineCap = <span class="hljs-string">&apos;round&apos;</span>
+    ctx.strokeStyle = color
+    ctx.lineWidth = lineWidth
+    ctx.setLineDash(lineStyle == <span class="hljs-string">&apos;dashed&apos;</span> ? [<span class="hljs-number">3</span>] : [])
+    ctx.arc(x, y, r, sAngle, eAngle, <span class="hljs-literal">false</span>)
+    ctx.stroke()
+}
+<span class="hljs-comment">/**
+ * &#x8BA1;&#x7B97;&#x6E10;&#x53D8;&#x8FC7;&#x6E21;&#x8272;
+ * @param {*} startColor
+ * @param {*} endColor
+ * @param {*} step
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">gradient</span>(<span class="hljs-params">startColor, endColor, step</span>) </span>{
+    <span class="hljs-comment">// &#x5C06; hex &#x8F6C;&#x6362;&#x4E3A;rgb</span>
+    <span class="hljs-keyword">var</span> sColor = hexToRgb(startColor),
+        eColor = hexToRgb(endColor)
+
+    <span class="hljs-comment">// &#x8BA1;&#x7B97;R\G\B&#x6BCF;&#x4E00;&#x6B65;&#x7684;&#x5DEE;&#x503C;</span>
+    <span class="hljs-keyword">var</span> rStep = (eColor[<span class="hljs-number">0</span>] - sColor[<span class="hljs-number">0</span>]) / step,
+        gStep = (eColor[<span class="hljs-number">1</span>] - sColor[<span class="hljs-number">1</span>]) / step,
+        bStep = (eColor[<span class="hljs-number">2</span>] - sColor[<span class="hljs-number">2</span>]) / step
+
+    <span class="hljs-keyword">var</span> gradientColorArr = []
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; step; i++) {
+        <span class="hljs-comment">// &#x8BA1;&#x7B97;&#x6BCF;&#x4E00;&#x6B65;&#x7684;hex&#x503C;</span>
+        gradientColorArr.push(rgbToHex(<span class="hljs-built_in">parseInt</span>(rStep * i + sColor[<span class="hljs-number">0</span>]), <span class="hljs-built_in">parseInt</span>(gStep * i + sColor[<span class="hljs-number">1</span>]), <span class="hljs-built_in">parseInt</span>(bStep * i + sColor[<span class="hljs-number">2</span>])))
+    }
+    <span class="hljs-keyword">return</span> gradientColorArr
+}
+<span class="hljs-comment">//&#x8BA1;&#x7B97;&#x4E24;&#x4E2A;&#x989C;&#x8272;&#x4E4B;&#x95F4;&#x7684;&#x6E10;&#x53D8;&#x8272;&#x503C;</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">rgbToHex</span>(<span class="hljs-params">r, g, b</span>) </span>{
+    <span class="hljs-keyword">var</span> hex = ((r &lt;&lt; <span class="hljs-number">16</span>) | (g &lt;&lt; <span class="hljs-number">8</span>) | b).toString(<span class="hljs-number">16</span>)
+    <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;#&apos;</span> + <span class="hljs-keyword">new</span> <span class="hljs-built_in">Array</span>(<span class="hljs-built_in">Math</span>.abs(hex.length - <span class="hljs-number">7</span>)).join(<span class="hljs-string">&apos;0&apos;</span>) + hex
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">hexToRgb</span>(<span class="hljs-params">hex</span>) </span>{
+    <span class="hljs-keyword">var</span> rgb = []
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">1</span>; i &lt; <span class="hljs-number">7</span>; i += <span class="hljs-number">2</span>) {
+        rgb.push(<span class="hljs-built_in">parseInt</span>(<span class="hljs-string">&apos;0x&apos;</span> + hex.slice(i, i + <span class="hljs-number">2</span>)))
+    }
+    <span class="hljs-keyword">return</span> rgb
+}
+</code></pre>
+<p><footer class="page-footer"><span class="copyright">Copyright &#xA9; 2020 Seven all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2023-02-27 17:05:17
+</span></footer><hr><div id="vcomments"></div><script src="//unpkg.com/valine/dist/Valine.min.js"></script><script>new Valine({el: "#vcomments",appId: 'TLeqR9Kf9OEdCIJbRoePAVJa-gzGzoHsz',appKey: 'yWIrEcQgcVcBIss59UlGeyV8',placeholder: 'Just go go',avatar: '',meta: undefined,pageSize: 10,lang: 'zh-CN',recordIP: false})</script></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="zebra_bg_txt.html" class="navigation navigation-prev " aria-label="Previous page: 文本行的斑马条纹">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../Part5_othert/" class="navigation navigation-next " aria-label="Next page: Part5：其它">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"canvas圆环组件","level":"1.5.4","depth":2,"next":{"title":"Part5：其它","level":"1.6","depth":1,"path":"Part5_othert/README.md","ref":"Part5_othert/README.md","articles":[{"title":".gitignore失效解决","level":"1.6.1","depth":2,"path":"Part5_othert/gitignore.md","ref":"Part5_othert/gitignore.md","articles":[]},{"title":"mddir生成目录结构树","level":"1.6.2","depth":2,"path":"Part5_othert/mddir_tree.md","ref":"Part5_othert/mddir_tree.md","articles":[]},{"title":"echarts图变模糊解决办法","level":"1.6.3","depth":2,"path":"Part5_othert/echarts_clear.md","ref":"Part5_othert/echarts_clear.md","articles":[]},{"title":"node版本管理","level":"1.6.4","depth":2,"path":"Part5_othert/node_version.md","ref":"Part5_othert/node_version.md","articles":[]},{"title":"Mac快捷键","level":"1.6.5","depth":2,"path":"Part5_othert/Mac_short.md","ref":"Part5_othert/Mac_short.md","articles":[]}]},"previous":{"title":"文本行的斑马条纹","level":"1.5.3","depth":2,"path":"Part4_effect/zebra_bg_txt.md","ref":"Part4_effect/zebra_bg_txt.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","anchors","github","github-buttons","donate","sharing-plus","anchor-navigation-ex","copy-code-button","tbfed-pagefooter","hide-element","valine","livereload","livereload"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © 2020 Seven","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"github":{"url":"https://github.com/seven777777"},"livereload":{},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"/images/ali_reward.jpg","alipayText":"支付宝打赏","button":"赞赏","title":"","wechat":"","wechatText":"微信打赏"},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"github-buttons":{"buttons":[{"user":"seven777777","repo":"DryCodeWarehouse","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"copy-code-button":{},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"valine":{"avatar":"","lang":"zh-CN","pageSize":10,"placeholder":"Just go go","recordIP":false,"appId":"TLeqR9Kf9OEdCIJbRoePAVJa-gzGzoHsz","appKey":"yWIrEcQgcVcBIss59UlGeyV8"}},"theme":"default","author":"seven","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Seven's Dry Code Book","language":"zh-hans","links":{"sidebar":{"seven's blog":"https://seven777777.github.io/myblog/"}},"gitbook":"3.2.3","description":"干货代码宝典"},"file":{"path":"Part4_effect/canvas_circle.md","mtime":"2023-02-27T09:05:17.728Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-02-27T09:05:29.491Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
