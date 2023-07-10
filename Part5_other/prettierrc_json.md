@@ -41,7 +41,27 @@
     // 换行标识
     "endOfLine": "lf",
     // 用于 Markdown 等，自动语言识别
-    "embeddedLanguageFormatting": "auto"
+    "embeddedLanguageFormatting": "auto",
+    // 在 HTML、Vue 和 JSX 中强制执行每行单个属性<bool>，默认false
+    "singleAttributePerLine": true
+    // 针对不同文件或目录设置不同配置的方法,json格式例子
+    // {
+    //   "semi": false,
+    //   "overrides": [
+    //     {
+    //       "files": "*.test.js",
+    //       "options": {
+    //         "semi": true
+    //       }
+    //     },
+    //     {
+    //       "files": ["*.html", "legacy/**/*.js"],
+    //       "options": {
+    //         "tabWidth": 4
+    //       }
+    //     }
+    //   ]
+    // }
 }
 ```
 
