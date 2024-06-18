@@ -13,6 +13,7 @@
     * [渐变虚点线](Part1_CSS/dottedGradient.md)
     * [不规则内容显示](Part1_CSS/shape_outside.md)
     * [高斯模糊蒙版](Part1_CSS/backdrop_blur.md)
+    * [边框发光转动动画](Part1_CSS/border_round_amt.md)
 * [Part2：JS](Part2_JS/README.md)
     * [色值转 RGBA](Part2_JS/color2rgba.md)
     * [色值转换 rgb 转 Hex](Part2_JS/rgbToHex.md)

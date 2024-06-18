@@ -1,0 +1,843 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>echarts 图变模糊解决办法 · Seven's Dry Code Book</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="seven">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="node_version.html" />
+    
+    
+    <link rel="prev" href="mddir_tree.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"seven777777","repo":"DryCodeWarehouse","type":"star","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://seven777777.github.io/myblog/" target="_blank" class="custom-link">seven's blog</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    业务代码干货宝典
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Part1_CSS/">
+            
+                <a href="../Part1_CSS/">
+            
+                    
+                    Part1：CSS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Part1_CSS/text_ellipsis.html">
+            
+                <a href="../Part1_CSS/text_ellipsis.html">
+            
+                    
+                    文本省略
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Part1_CSS/placeholder_style_set.html">
+            
+                <a href="../Part1_CSS/placeholder_style_set.html">
+            
+                    
+                    placeholder 样式设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../Part1_CSS/scrollBar_builty.html">
+            
+                <a href="../Part1_CSS/scrollBar_builty.html">
+            
+                    
+                    滚动条样式美化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../Part1_CSS/draw_drop.html">
+            
+                <a href="../Part1_CSS/draw_drop.html">
+            
+                    
+                    绘制水滴形状样式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../Part1_CSS/list_layout_grid.html">
+            
+                <a href="../Part1_CSS/list_layout_grid.html">
+            
+                    
+                    Grid 布局实现列表等分排列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../Part1_CSS/diy_fontfamily.html">
+            
+                <a href="../Part1_CSS/diy_fontfamily.html">
+            
+                    
+                    使用自定义字体
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../Part1_CSS/anomaly_shadow.html">
+            
+                <a href="../Part1_CSS/anomaly_shadow.html">
+            
+                    
+                    不规则阴影
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../Part1_CSS/zebra_bg.html">
+            
+                <a href="../Part1_CSS/zebra_bg.html">
+            
+                    
+                    斑马纹背景
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../Part1_CSS/dottedGradient.html">
+            
+                <a href="../Part1_CSS/dottedGradient.html">
+            
+                    
+                    渐变虚点线
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../Part1_CSS/shape_outside.html">
+            
+                <a href="../Part1_CSS/shape_outside.html">
+            
+                    
+                    不规则内容显示
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../Part1_CSS/backdrop_blur.html">
+            
+                <a href="../Part1_CSS/backdrop_blur.html">
+            
+                    
+                    高斯模糊蒙版
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Part2_JS/">
+            
+                <a href="../Part2_JS/">
+            
+                    
+                    Part2：JS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Part2_JS/color2rgba.html">
+            
+                <a href="../Part2_JS/color2rgba.html">
+            
+                    
+                    色值转 RGBA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../Part2_JS/rgbToHex.html">
+            
+                <a href="../Part2_JS/rgbToHex.html">
+            
+                    
+                    色值转换 rgb 转 Hex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../Part2_JS/hexToRgb.html">
+            
+                <a href="../Part2_JS/hexToRgb.html">
+            
+                    
+                    色值转换 Hex 转 rgb
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../Part2_JS/colorGradient.html">
+            
+                <a href="../Part2_JS/colorGradient.html">
+            
+                    
+                    计算两个色值中的过渡色值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../Part2_JS/num_add_qfw.html">
+            
+                <a href="../Part2_JS/num_add_qfw.html">
+            
+                    
+                    数值增加千分位符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../Part2_JS/fun_debounce.html">
+            
+                <a href="../Part2_JS/fun_debounce.html">
+            
+                    
+                    函数防抖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../Part2_JS/objArrDeduplication.html">
+            
+                <a href="../Part2_JS/objArrDeduplication.html">
+            
+                    
+                    数组对象去重
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../Part2_JS/objEqual.html">
+            
+                <a href="../Part2_JS/objEqual.html">
+            
+                    
+                    判断两个对象完全相同
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../Part2_JS/isRealNum.html">
+            
+                <a href="../Part2_JS/isRealNum.html">
+            
+                    
+                    判断是否是数字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../Part2_JS/time_calc.html">
+            
+                <a href="../Part2_JS/time_calc.html">
+            
+                    
+                    常用时间计算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../Part2_JS/deepclone.html">
+            
+                <a href="../Part2_JS/deepclone.html">
+            
+                    
+                    手撕：深拷贝
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Part3_aMap/">
+            
+                <a href="../Part3_aMap/">
+            
+                    
+                    Part3：aMap-高德地图
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Part3_aMap/drawDiyMark.html">
+            
+                <a href="../Part3_aMap/drawDiyMark.html">
+            
+                    
+                    画自定义 mark
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../Part4_effect/">
+            
+                <a href="../Part4_effect/">
+            
+                    
+                    Part4：页面效果
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../Part4_effect/timeline.html">
+            
+                <a href="../Part4_effect/timeline.html">
+            
+                    
+                    横向上下交错时间线列表布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../Part4_effect/coupon.html">
+            
+                <a href="../Part4_effect/coupon.html">
+            
+                    
+                    优惠券-内圆角带阴影
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../Part4_effect/zebra_bg_txt.html">
+            
+                <a href="../Part4_effect/zebra_bg_txt.html">
+            
+                    
+                    文本行的斑马条纹
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../Part4_effect/canvas_circle.html">
+            
+                <a href="../Part4_effect/canvas_circle.html">
+            
+                    
+                    canvas 圆环组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Part5：其它
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="gitignore.html">
+            
+                <a href="gitignore.html">
+            
+                    
+                    .gitignore 失效解决
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="mddir_tree.html">
+            
+                <a href="mddir_tree.html">
+            
+                    
+                    mddir 生成目录结构树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.3" data-path="echarts_clear.html">
+            
+                <a href="echarts_clear.html">
+            
+                    
+                    echarts 图变模糊解决办法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="node_version.html">
+            
+                <a href="node_version.html">
+            
+                    
+                    node 版本管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="Mac_short.html">
+            
+                <a href="Mac_short.html">
+            
+                    
+                    Mac 快捷键
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="vscode_settings.html">
+            
+                <a href="vscode_settings.html">
+            
+                    
+                    vscode settings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="prettierrc_json.html">
+            
+                <a href="prettierrc_json.html">
+            
+                    
+                    .prettierrc.json
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >echarts 图变模糊解决办法</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#echarts-&#x56FE;&#x53D8;&#x6A21;&#x7CCA;&#x89E3;&#x51B3;&#x529E;&#x6CD5;"><b></b>echarts &#x56FE;&#x53D8;&#x6A21;&#x7CCA;&#x89E3;&#x51B3;&#x529E;&#x6CD5;</a></li><ul><li><span class="title-icon "></span><a href="#&#x65B9;&#x6CD5;&#x4E00;&#x4F7F;&#x7528;-svg-&#x6E32;&#x67D3;&#x65B9;&#x5F0F;&#x6E32;&#x67D3;-echarts-&#x56FE;"><b></b>&#x65B9;&#x6CD5;&#x4E00;:&#x4F7F;&#x7528; svg &#x6E32;&#x67D3;&#x65B9;&#x5F0F;&#x6E32;&#x67D3; echarts &#x56FE;</a></li><li><span class="title-icon "></span><a href="#&#x65B9;&#x6CD5;&#x4E8C;&#x901A;&#x8FC7;-devicepixelratio-&#x8C03;&#x6574;&#x6E05;&#x6670;&#x5EA6;"><b></b>&#x65B9;&#x6CD5;&#x4E8C;:&#x901A;&#x8FC7; devicePixelRatio &#x8C03;&#x6574;&#x6E05;&#x6670;&#x5EA6;</a></li></ul></ul></div><a href="#echarts-&#x56FE;&#x53D8;&#x6A21;&#x7CCA;&#x89E3;&#x51B3;&#x529E;&#x6CD5;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="echarts-&#x56FE;&#x53D8;&#x6A21;&#x7CCA;&#x89E3;&#x51B3;&#x529E;&#x6CD5;"><a name="echarts-&#x56FE;&#x53D8;&#x6A21;&#x7CCA;&#x89E3;&#x51B3;&#x529E;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#echarts-&#x56FE;&#x53D8;&#x6A21;&#x7CCA;&#x89E3;&#x51B3;&#x529E;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="echarts-&#x56FE;&#x53D8;&#x6A21;&#x7CCA;&#x89E3;&#x51B3;&#x529E;&#x6CD5;" class="plugin-anchor" href="#echarts-&#x56FE;&#x53D8;&#x6A21;&#x7CCA;&#x89E3;&#x51B3;&#x529E;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>echarts &#x56FE;&#x53D8;&#x6A21;&#x7CCA;&#x89E3;&#x51B3;&#x529E;&#x6CD5;</h1>
+<h2 id="&#x65B9;&#x6CD5;&#x4E00;&#x4F7F;&#x7528;-svg-&#x6E32;&#x67D3;&#x65B9;&#x5F0F;&#x6E32;&#x67D3;-echarts-&#x56FE;"><a name="&#x65B9;&#x6CD5;&#x4E00;&#x4F7F;&#x7528;-svg-&#x6E32;&#x67D3;&#x65B9;&#x5F0F;&#x6E32;&#x67D3;-echarts-&#x56FE;" class="anchor-navigation-ex-anchor" href="#&#x65B9;&#x6CD5;&#x4E00;&#x4F7F;&#x7528;-svg-&#x6E32;&#x67D3;&#x65B9;&#x5F0F;&#x6E32;&#x67D3;-echarts-&#x56FE;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x65B9;&#x6CD5;&#x4E00;&#x4F7F;&#x7528;-svg-&#x6E32;&#x67D3;&#x65B9;&#x5F0F;&#x6E32;&#x67D3;-echarts-&#x56FE;" class="plugin-anchor" href="#&#x65B9;&#x6CD5;&#x4E00;&#x4F7F;&#x7528;-svg-&#x6E32;&#x67D3;&#x65B9;&#x5F0F;&#x6E32;&#x67D3;-echarts-&#x56FE;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65B9;&#x6CD5;&#x4E00;:&#x4F7F;&#x7528; svg &#x6E32;&#x67D3;&#x65B9;&#x5F0F;&#x6E32;&#x67D3; echarts &#x56FE;</h2>
+<pre><code>echarts.init(this.$refs.line, null, { renderer: &quot;svg&quot; })
+</code></pre><h2 id="&#x65B9;&#x6CD5;&#x4E8C;&#x901A;&#x8FC7;-devicepixelratio-&#x8C03;&#x6574;&#x6E05;&#x6670;&#x5EA6;"><a name="&#x65B9;&#x6CD5;&#x4E8C;&#x901A;&#x8FC7;-devicepixelratio-&#x8C03;&#x6574;&#x6E05;&#x6670;&#x5EA6;" class="anchor-navigation-ex-anchor" href="#&#x65B9;&#x6CD5;&#x4E8C;&#x901A;&#x8FC7;-devicepixelratio-&#x8C03;&#x6574;&#x6E05;&#x6670;&#x5EA6;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x65B9;&#x6CD5;&#x4E8C;&#x901A;&#x8FC7;-devicepixelratio-&#x8C03;&#x6574;&#x6E05;&#x6670;&#x5EA6;" class="plugin-anchor" href="#&#x65B9;&#x6CD5;&#x4E8C;&#x901A;&#x8FC7;-devicepixelratio-&#x8C03;&#x6574;&#x6E05;&#x6670;&#x5EA6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65B9;&#x6CD5;&#x4E8C;:&#x901A;&#x8FC7; devicePixelRatio &#x8C03;&#x6574;&#x6E05;&#x6670;&#x5EA6;</h2>
+<pre><code>echarts.init(this.$refs.line,null, {devicePixelRatio: 2.5})
+</code></pre><p><footer class="page-footer"><span class="copyright">Copyright &#xA9; 2020 Seven all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2023-03-07 14:22:18
+</span></footer><hr><div id="vcomments"></div><script src="//unpkg.com/valine/dist/Valine.min.js"></script><script>new Valine({el: "#vcomments",appId: 'TLeqR9Kf9OEdCIJbRoePAVJa-gzGzoHsz',appKey: 'yWIrEcQgcVcBIss59UlGeyV8',placeholder: 'Just go go',avatar: '',meta: undefined,pageSize: 10,lang: 'zh-CN',recordIP: false})</script></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="mddir_tree.html" class="navigation navigation-prev " aria-label="Previous page: mddir 生成目录结构树">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="node_version.html" class="navigation navigation-next " aria-label="Next page: node 版本管理">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"echarts 图变模糊解决办法","level":"1.6.3","depth":2,"next":{"title":"node 版本管理","level":"1.6.4","depth":2,"path":"Part5_other/node_version.md","ref":"Part5_other/node_version.md","articles":[]},"previous":{"title":"mddir 生成目录结构树","level":"1.6.2","depth":2,"path":"Part5_other/mddir_tree.md","ref":"Part5_other/mddir_tree.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","anchors","github","github-buttons","donate","sharing-plus","anchor-navigation-ex","copy-code-button","tbfed-pagefooter","hide-element","valine","livereload"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © 2020 Seven","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"github":{"url":"https://github.com/seven777777"},"livereload":{},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"/images/ali_reward.jpg","alipayText":"支付宝打赏","button":"赞赏","title":"","wechat":"","wechatText":"微信打赏"},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"github-buttons":{"buttons":[{"user":"seven777777","repo":"DryCodeWarehouse","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"copy-code-button":{},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"valine":{"avatar":"","lang":"zh-CN","pageSize":10,"placeholder":"Just go go","recordIP":false,"appId":"TLeqR9Kf9OEdCIJbRoePAVJa-gzGzoHsz","appKey":"yWIrEcQgcVcBIss59UlGeyV8"}},"theme":"default","author":"seven","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Seven's Dry Code Book","language":"zh-hans","links":{"sidebar":{"seven's blog":"https://seven777777.github.io/myblog/"}},"gitbook":"3.2.3","description":"干货代码宝典"},"file":{"path":"Part5_other/echarts_clear.md","mtime":"2023-03-07T06:22:18.827Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-07-10T08:35:11.708Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
