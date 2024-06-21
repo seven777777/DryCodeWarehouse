@@ -33,6 +33,8 @@
     * [优惠券-内圆角带阴影](Part4_effect/coupon.md)
     * [文本行的斑马条纹](Part4_effect/zebra_bg_txt.md)
     * [canvas 圆环组件](Part4_effect/canvas_circle.md)
+    * [纯 CSS 实现标签自动显示超出数量](Part4_effect/hide_num_css.md)
+    * [纯 CSS 实现文本超过行数展开收起](Part4_effect/txt_expand_css.md)
 * [Part5：其它](Part5_other/README.md)
     * [.gitignore 失效解决](Part5_other/gitignore.md)
     * [mddir 生成目录结构树](Part5_other/mddir_tree.md)
